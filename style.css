@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+    margin: 0;
+    font-family: "Roboto";
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+}
+
+* {
+    box-sizing: border-box;    
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    grid-template-rows: 175px 1fr; /* Si trop explicite, enlever */
+}
+
+.sidebar {
+    background-color: #1992D4;
+    grid-column: 1 / 2;
+    grid-row: 1 / -1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 15px;
+}
+
+.sidebar > * {
+    background: #F1676D;
+    border-radius: 5px;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
+
+}
+
+.menu-secondary {
+    height: 200px;
+}
+
+.head-menu {
+    background-color: #FACC15;
+    grid-column: 2 / -1;
+    padding: 15px 30px;
+}
+
+.head-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 80px;
+}
+
+.search-container {
+    display: flex;
+    gap: 20px;
+    flex: 1;
+    align-items: center;
+}
+
+.search-container input {
+    flex: 1;
+    height: 30px;
+}
+
+.head-profile {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.head-bottom {
+    padding-top: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.head-bottom .username {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.head-bottom .username p {
+    margin: 0;
+}
+
+.head-bottom .username p:nth-child(2) {
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+.username .user-picture {
+    align-self: start;
+}
+
+.file-actions {
+    display: flex;
+    gap: 40px;
+}
+.main {
+    background: #E2E8F0;
+    grid-column: 2 / -1;
+    gap: 15px;
+}
+
+.main {
+    display: flex;
+    padding: 15px;
+} 
+
+.section-title {
+    font-weight: bold;
+}
+
+.section-1 .section-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 15px;
+}
+.card {
+    background: RGB(95, 99, 104);
+    color: white;
+    font-family: "Roboto";
+    border-radius: 5px;
+    padding: 15px;
+}
+
+.card-title {
+    font-weight: bold;
+}
+
+.section-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.section-side {
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.section-side .section-content {
+    background: rgb(150, 150, 150);
+    padding: 15px;
+    border-radius: 5px;
+    flex: 1;
+}
+
+.fake-icon {
+    border-radius: 360px;
+    width: 40px;
+    height: 40px;
+    background: #F59E0B;
+}
